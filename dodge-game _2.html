@@ -623,10 +623,8 @@
             }
         });
         
-        document.addEventListener('click', (e) => {
-            if (!shopModal.contains(e.target) && 
-                e.target.className !== 'shop-btn' && 
-                !e.target.classList.contains('restart-btn')) {
+        gameContainer.addEventListener('click', (e) => {
+            if (!shopModal.contains(e.target) && e.target.className !== 'shop-btn') {
                 jump();
             }
         });
